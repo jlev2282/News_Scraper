@@ -34,8 +34,8 @@ var databaseUri = 'mongodb://localhost/ajcscraper';
 var herokuconnect = "mongodb://heroku_5r5qqp93:g7klub7e9tr3265h7htkusscgg@ds153392.mlab.com:53392/heroku_5r5qqp93";
 // mongoose.connect("mongodb://heroku_5r5qqp93:g7klub7e9tr3265h7htkusscgg@ds153392.mlab.com:53392/heroku_5r5qqp93");
 
-if (process.env.MONGODB_URI) {
-    mongoose.connect(process.env.MONGODB_URI);
+if (herokuconnect) {
+    mongoose.connect(herokuconnect);
 } else {
     mongoose.connect(databaseUri);
 }
