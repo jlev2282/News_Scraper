@@ -26,9 +26,9 @@ $(document).on("click", "p", function() {
       // The title of the article
       $("#comments").append("<h2>" + data.title + "</h2>");
       // An input to enter a new title
-      $("#comments").append("<input id='titleinput' name='title' >");
+      $("#comments").append("<input id='titleinput' name='title' value='Title'> <br>");
       // A textarea to add a new comment body
-      $("#comments").append("<textarea id='bodyinput' name='body'></textarea>");
+      $("#comments").append("<textarea id='bodyinput' name='body'>Comment Here</textarea>");
       // A button to submit a new comment, with the id of the article saved to it
       $("#comments").append("<button data-id='" + data._id + "' id='savecomment'>Save Comment</button>");
 
