@@ -31,15 +31,16 @@ app.use(express.static("public"));
 
 // Database configuration with mongoose
 var databaseUri = 'mongodb://localhost/ajcscraper';
-
-mongoose.connect("mongodb://heroku_5r5qqp93:g7klub7e9tr3265h7htkusscgg@ds153392.mlab.com:53392/heroku_5r5qqp93");
+var herokuconnect = "mongodb://heroku_5r5qqp93:g7klub7e9tr3265h7htkusscgg@ds153392.mlab.com:53392/heroku_5r5qqp93";
+// mongoose.connect("mongodb://heroku_5r5qqp93:g7klub7e9tr3265h7htkusscgg@ds153392.mlab.com:53392/heroku_5r5qqp93");
 
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI);
 } else {
     mongoose.connect(databaseUri);
-var db = mongoose.connection;
 }
+
+var db = mongoose.connection;
 
 // Show any mongoose errors
 db.on("error", function(error) {
