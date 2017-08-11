@@ -30,7 +30,7 @@ $(document).on("click", "p", function() {
       // A textarea to add a new comment body
       $("#comments").append("<textarea id='bodyinput' name='body'></textarea>");
       // A button to submit a new comment, with the id of the article saved to it
-      $("#comments").append("<button data-id='" + data._id + "' id='savenote'>Save Comment</button>");
+      $("#comments").append("<button data-id='" + data._id + "' id='savecomment'>Save Comment</button>");
 
       // If there's a comment in the article
       if (data.comment) {
