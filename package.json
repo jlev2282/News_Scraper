@@ -1,0 +1,33 @@
+{
+  "name": "news_scraper",
+  "version": "1.0.0",
+  "description": "gathers news from the web and post for comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlev2282/News_Scraper.git"
+  },
+  "keywords": [
+    "news",
+    "scraper",
+    "post"
+  ],
+  "author": "John Leverett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlev2282/News_Scraper/issues"
+  },
+  "homepage": "https://github.com/jlev2282/News_Scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.5",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
+  }
+}
