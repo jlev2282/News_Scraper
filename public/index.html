@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <title>Atlanta Journal Constitution News Scraper</title>
     <style>
-      body { background-color: #F2F6D0 }
+      html { 
+        background: url("http://www.sundialrestaurant.com/new/wp-content/uploads/2014/08/2.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
       #wrapper {
+        border-radius: 5px;
+        background-color: white;
+        opacity: 0.7;
         width: 960px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
+        padding-left: 5%
       }
       #articles {
         display: inline-block;
@@ -34,14 +45,26 @@
         height: 200px;
         font-size: 18px;
       }
+
+      div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 1;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
     </style>
   </head>
   <body>
     <div id="wrapper">
-      <h1>Atlanta Journal Constitution News Scraper</h1>
-      <h2><i>Pick and article and leave a comment about it</i></h2>
-      <div id="articles"></div>
-      <div id="comments"></div>
+      <h1 style="text-align: center">Atlanta Journal Constitution News Scraper</h1>
+      <div class="transbox">
+
+        <h2><i>Pick and article and leave a comment about it</i></h2>
+        <div id="articles"></div>
+        <div id="comments"></div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="app.js"></script>
